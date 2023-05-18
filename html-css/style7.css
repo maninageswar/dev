@@ -1,0 +1,29 @@
+.column {
+    column-count: 4;
+    column-width: 250px;
+    column-rule: 3px solid black;
+    column-gap: 3rem;
+}
+
+.column p {
+    margin-top: 0px;
+}
+
+.column h2 {
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    padding: 1rem;
+    break-inside: avoid;
+    break-before: column;
+}
+
+.column .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    column-span: all;
+
+}
+
+

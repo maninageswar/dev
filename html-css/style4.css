@@ -1,0 +1,11 @@
+.a,.b,.c { 
+    border-style: solid;
+    border-width: 2px;
+}
+.a,.b,.c {
+    width: 25%;
+    margin: 3px;
+    padding: 30px;
+    display: inline-block;
+    
+}

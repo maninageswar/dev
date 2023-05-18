@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(181, 175, 175);
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.items {
+    background-color: red;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+    /* flex-grow: 1; */
+    /* flex-basis: 90px; */
+}
+
+/* .item-3 {
+    height: 6rem;
+    align-self: flex-end;
+} */
+
+/* .item-5 {
+    height: 6rem;
+    justify-content: flex-start;
+} */

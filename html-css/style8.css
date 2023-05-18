@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0px;
+}
+
+a {
+    color: white;
+    
+}
+
+section {
+    height: 100vh;
+}
+
+.header {
+    color: white;
+    font-size: 3rem;
+    position: sticky; 
+    top: 0px;
+
+}
+
+#one {
+    background-color: orange;
+}
+
+#two {
+    background-color: green;
+}
+
+#three {
+    background-color: blue;
+}
+
+button {
+    font-size: inherit;
+    position: fixed;
+    top: 20rem;
+    z-index: 1;
+}

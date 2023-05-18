@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+}
+
+h2 {
+    background-color: gold;
+    border-radius: 2rem 2rem 0px 0px;
+}
+
+ul {
+    border: 2px solid;
+    border-radius: 2rem;
+    margin: 3px auto;
+    max-width: 600px;
+    line-height: 7rem;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 3rem;
+    display: block;
+}
+
+
+li {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    border-top: 1px solid #333;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+/* a:active {
+    font-size: 6rem;
+} */
+
+a:focus {
+    background-color: blueviolet;
+}
+
+li:last-child a {
+    border-radius: 0px 0px 2rem 2rem;
+    
+}
