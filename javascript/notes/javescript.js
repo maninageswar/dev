@@ -238,3 +238,4 @@
 // to give and condition in if we use &&
 // to give or condition in if we use ||
 
+// reduce
