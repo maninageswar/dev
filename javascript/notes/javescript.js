@@ -6,7 +6,6 @@
 // var lname = prompt("enter last name");
 // console.log("your name is ",fname,lname);
 
-
 // difference between var and let and their scopes in the blocks
 // var x=5;
 // console.log("outside block the x is ",x)
@@ -34,7 +33,6 @@
 // cars.push("Audi");
 
 // console.log(cars[0])
-
 
 // function foo(){
 //     var x=4
@@ -73,7 +71,6 @@
 // console.log(y)
 // console.log(globalThis)
 
-
 // for loop
 
 // var x
@@ -92,7 +89,7 @@
 //     console.log("they are equal in state and also equal in type")
 // }
 // else {
-//     console.log("they are equal in state but not in type")    
+//     console.log("they are equal in state but not in type")
 // }
 
 // function Replace (){
@@ -142,7 +139,6 @@
 // }
 // html+="</ul>"
 
-
 // document.getElementById("demo").innerHTML = html;
 // </script>
 
@@ -159,19 +155,19 @@
 
 // const numbers = [45, 4, 9, 16, 25];
 
-
 // for (let x of numbers) {
 //   console.log(x)
 // }
 
-// food=prompt("enter food")
-// const prompt = require('prompt-sync')({sigint: true})
+// ******************************************** to take user input ********************************************
+// food=prompt("enter food") 
+// const prompt = require('prompt-sync')({sigint: true}) // this line should be included in vs code
 // n1=Number(prompt("n1"))
 // n2=Number(prompt("n2"))
 // console.log(n1+n2)
 
-// let name="man"
-// console.log("hi "+name+" bhjgvjb")
+
+// ******************************************** to declare function in an object ********************************************
 
 // const intro = (name,age)=> {
 //     const person ={NAME:name,AGE:age,full: function(){return this.NAME+this.AGE}}
@@ -188,13 +184,57 @@
 // }
 // console.log(n)
 
-const arr=[1,5,2,6,7,9,8,7,6,5,4,6,6677,7,8,65,4,6,7,888676677,5555]
-// v=Math.min(1,5,2,6,7,9,8,7,6,5,4,6,6677,7,8,65,4,6,7,888676677,5555)
-console.log(Math.max.apply(null, arr))
+// const findsum=(arr)=>{
 // let r=0
 // for (const i of arr){
-//     if (i>r) {
-//         r=i
-//     }
+//     r+=i
 // }
+// return {result:r}
+// }
+// const ar=[1,5,2,6,7,9,8,7,6,5,4,6,6677,7,8,65,4,6,7,888676677,5555]
+// console.log(findsum(ar))
+
+// ******************************************** to find the frequency of characters in a sentence ********************************************
+
+// let sen = "hello hi there i am a awaste fellow";
+// const FindLetterFrequency = (sentence) => {
+//   obj = {};
+//   for (const i of sentence) {
+//     if (i !== ' ') {
+//       if (i in obj) {
+//         obj[i] += 1;
+//       } else {
+//         obj[i] = 1;
+//       }
+//     }
+//   }
+//   return obj;
+// };
+
+// console.log(FindLetterFrequency(sen));
+// let n = "a a a a lol lol there ".split(" ");
+// let h=n[7]
+// k=typeof h
+// console.log(n)
+// console.log(h)
+// console.log(k)
+
+// ******************************************** higher order functions ********************************************
+
+// map
+// let result = [1,2,3,4,5].map(number => number*2)
+// console.log(result)
+
+// filter
+// let r=[1,2,3,4,5].filter(num=>num>3)
 // console.log(r)
+
+// const actors=[{name:"jonnay",networth:10000000000},
+//               {name:"Amber",networth:1000},
+//               {name:"ronaldo",networth:10000000000000000}]
+// console.log(actors.filter(actor=>actor.networth>1000))
+
+
+// to give and condition in if we use &&
+// to give or condition in if we use ||
+
