@@ -44,11 +44,11 @@ rock = () => {
   document.getElementById("result").innerHTML = `<h3>result:${k}</h3>`;
   document.getElementById("your_choice").innerHTML = `<h3>your choice:rock</h3>`;
 };
-papper = () => {
-  console.log("you clicked papper");
+paper = () => {
+  console.log("you clicked paper");
   let k = result(0);
   document.getElementById("result").innerHTML = `<h3>result:${k}</h3>`;
-  document.getElementById("your_choice").innerHTML = `<h3>your choice:papper</h3>`;
+  document.getElementById("your_choice").innerHTML = `<h3>your choice:paper</h3>`;
 };
 siccor = () => {
   console.log("you clicked siccor");
