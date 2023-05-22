@@ -160,12 +160,11 @@
 // }
 
 // ******************************************** to take user input ********************************************
-// food=prompt("enter food") 
+// food=prompt("enter food")
 // const prompt = require('prompt-sync')({sigint: true}) // this line should be included in vs code
 // n1=Number(prompt("n1"))
 // n2=Number(prompt("n2"))
 // console.log(n1+n2)
-
 
 // ******************************************** to declare function in an object ********************************************
 
@@ -219,7 +218,7 @@
 // console.log(h)
 // console.log(k)
 
-// ******************************************** higher order functions ********************************************
+// ******************************************** higher order functions(very important) ********************************************
 
 // map
 // let result = [1,2,3,4,5].map(number => number*2)
@@ -234,8 +233,45 @@
 //               {name:"ronaldo",networth:10000000000000000}]
 // console.log(actors.filter(actor=>actor.networth>1000))
 
-
 // to give and condition in if we use &&
 // to give or condition in if we use ||
 
 // reduce
+// reduce can be best explained with an operation sum of an array
+// const nums=[1,2,3,4,5]
+// result = nums.reduce(function add (a,b){
+//     return a+b
+// })
+// console.log(result)
+// result=nums.reduce((a,b)=>a+b) // shortest form to above
+// console.log(result)
+
+const actors = [
+  { name: "jonnay", networth: 10000000000 },
+  { name: "Amber", networth: 1000 },
+  { name: "ronaldo", networth: 10000000000000000 },
+];
+
+// sum_of_networths_of_aactors=actors.map(a=>a.networth).reduce((a,b)=>a+b)
+// console.log(sum_of_networths_of_aactors)
+// console.log(actors.map(z=>z.name).reduce((a,b)=>a+" "+b)) //-->jonnay Amber ronaldo
+// console.log(actors.map(z=>z.name)) //-->[ 'jonnay', 'Amber', 'ronaldo' ]
+// console.log(actors.filter(z=>z.name)) //--> [{ name: "jonnay", networth: 10000000000 },{ name: "Amber", networth: 1000 },{ name: "ronaldo", networth: 10000000000000000 },]
+// console.log(actors.reduce(z=>z.name)) //--> undefined
+
+
+// ******************************************** understanding the difference between map reduce filter ********************************************
+
+// k = [1, 2, 3, 4, 5, 6, 7];
+// console.log(k.map((a) => a > 5)); //--> [false, false, false, false, false, true,true]
+// console.log(k.map((a) => a + 5));; //--> [(6, 7, 8, 9, 10, 11, 12)]
+// console.log(k.filter((a) => a > 5)); //--> [ 6, 7 ]
+// console.log(k.filter((a) => a + 5)); //--> [1, 2, 3, 4, 5, 6, 7]
+// o=k.filter((a) => a > 4).map((b) => b + "#######"); //-->[ '5#######', '6#######', '7#######' ]
+// console.log(o)
+// console.log(o.reduce((a,b)=>a+b)) //--> 5#######6#######7#######
+
+
+// k = [13, 24, 35, 44, 58, 65, 79]
+// k = [13, 24, 35, 44, 58, 65, 79]
+// console.log(k.map(x=>x%2))
