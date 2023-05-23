@@ -32,27 +32,26 @@ let result = (input) => {
       res = "it's a tie";
     }
   }
-  document.getElementById(
-    "computer_chioce"
-  ).innerHTML = `<h3>system's chioce:${chioce[Computer_Choice]}</h3>`;
+  // document.getElementById("computer_chioce").innerHTML = `<h3>system's chioce:${chioce[Computer_Choice]}</h3>`;
+  document.getElementById("computer_chioce").innerText=`system's chioce:${chioce[Computer_Choice]}`;
   return res;
 };
 
 rock = () => {
   console.log("you clicked rock");
   let k = result(2);
-  document.getElementById("result").innerHTML = `<h3>result:${k}</h3>`;
-  document.getElementById("your_choice").innerHTML = `<h3>your choice:rock</h3>`;
+  document.getElementById("result").innerText = `result:${k}`;
+  document.getElementById("your_choice").innerText = `your choice:rock`;
 };
 paper = () => {
   console.log("you clicked paper");
   let k = result(0);
-  document.getElementById("result").innerHTML = `<h3>result:${k}</h3>`;
-  document.getElementById("your_choice").innerHTML = `<h3>your choice:paper</h3>`;
+  document.getElementById("result").innerText = `result:${k}`;
+  document.getElementById("your_choice").innerText = `your choice:paper`;
 };
 siccor = () => {
   console.log("you clicked siccor");
   let k = result(1);
-  document.getElementById("result").innerHTML = `<h3>result:${k}</h3>`;
-  document.getElementById("your_choice").innerHTML = `<h3>your choice:siccor</h3>`;
+  document.getElementById("result").innerText = `result:${k}`;
+  document.getElementById("your_choice").innerText = `your choice:siccor`;
 };
