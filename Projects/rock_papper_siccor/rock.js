@@ -32,7 +32,6 @@ let result = (input) => {
       res = "it's a tie";
     }
   }
-  // document.getElementById("computer_chioce").innerHTML = `<h3>system's chioce:${chioce[Computer_Choice]}</h3>`;
   document.getElementById("computer_chioce").innerText=`system's chioce:${chioce[Computer_Choice]}`;
   return res;
 };
