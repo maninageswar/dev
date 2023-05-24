@@ -246,11 +246,11 @@
 // result=nums.reduce((a,b)=>a+b) // shortest form to above
 // console.log(result)
 
-const actors = [
-  { name: "jonnay", networth: 10000000000 },
-  { name: "Amber", networth: 1000 },
-  { name: "ronaldo", networth: 10000000000000000 },
-];
+// const actors = [
+//   { name: "jonnay", networth: 10000000000 },
+//   { name: "Amber", networth: 1000 },
+//   { name: "ronaldo", networth: 10000000000000000 },
+// ];
 
 // sum_of_networths_of_aactors=actors.map(a=>a.networth).reduce((a,b)=>a+b)
 // console.log(sum_of_networths_of_aactors)
@@ -275,3 +275,39 @@ const actors = [
 // k = [13, 24, 35, 44, 58, 65, 79]
 // k = [13, 24, 35, 44, 58, 65, 79]
 // console.log(k.map(x=>x%2))
+
+// ******************************************** understanding the difference all for types in js ********************************************
+
+// const k={"name":"sai","age":24}
+// for (const a in k){
+//   console.log(a)
+// }
+
+// console.log()
+
+// const v=["a","b","c","d"]
+// for (const a in v){
+//   console.log(a)
+// }
+
+// console.log()
+
+// for (const a of v){
+//   console.log(a)
+// }
+
+// v.forEach(element => {
+//   console.log(element) 
+// });
+
+// ////// ************** important  for each only works on arrays
+
+// const times_clicked={"orange":3,"pink":3,"blue":3}
+// const times_clicked=["orange","pink","blue"]
+// times_clicked.forEach(key=>{
+//   console.log(key)
+// })
+
+// for (const key in times_clicked) {
+//       console.log(key)
+//   }

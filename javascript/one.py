@@ -34,3 +34,7 @@
 # d={'j': 0, 'h': 0, 'g': 0, 'f': 0, 'k': 0, 'l': 0, 'u': 0, 'y': 0, 't': 0}
 # if "j" in d:
 #     print(d['j'])
+
+print("hi",end="")
+print("hello")
+print("hello")
