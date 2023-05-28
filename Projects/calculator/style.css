@@ -43,13 +43,13 @@ body{
     margin-bottom: 20px;
 }
 
-.input{
+.result{
     /* border: 2px solid white; */
     color: white;
     text-align: right;
 }
 
-.result{
+.input{
     color: #a060fa;
     text-align: right;
 }
@@ -68,6 +68,10 @@ body{
     box-shadow: inset 5px 5px 12px #ffffff,5px 5px 12px rgba(0,0,0,.16)
 }
 
+.button:nth-child(13){
+    color: #a060fa;
+}
+
 .lower{
     /* border: 2px solid red; */
     padding: 10px;
@@ -78,4 +82,3 @@ body{
     align-content: center; */
     place-items: center;
 }
-

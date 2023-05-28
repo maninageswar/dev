@@ -311,3 +311,8 @@
 // for (const key in times_clicked) {
 //       console.log(key)
 //   }
+
+let s="1234+1234-1234/12348*1234"
+// const myArray = s.split("+");
+const myArray = eval(s);
+console.log(myArray)
