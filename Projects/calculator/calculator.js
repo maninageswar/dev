@@ -8,25 +8,28 @@ buttons.forEach(button=>{
     button.onclick=()=>{
         if(operations.includes(button.innerText)){
             if (result.innerText!=0){
-            result.innerText=0
-            number+=button.innerText
-            input.innerText=number
+                result.innerText=0
+                number+=button.innerText
+                input.innerText=number
         }}else if(button.innerText==="<"){
             if (input.innerText!=0){
-            c=number.slice(0,-1)
-            number=c
-            input.innerText=number
-            result.innerText=eval(number)
-        }
-        }else if(button.innerText=="ac"){
+                number=number.slice(0,-1)
+                calculate()
+        }}else if(button.innerText=="ac"){
             number=""
             input.innerText=0
             result.innerText=0
-        }
-        else{
+        }else if(button.innerText=="."){
+            number+="0."
+            calculate()
+        }else{
             number+=button.innerText
-            input.innerText=number    
-            result.innerText=eval(number)
+            calculate()
         }
     }
 })
+
+function calculate(){
+    input.innerText=number    
+    result.innerText=eval(number)
+}
