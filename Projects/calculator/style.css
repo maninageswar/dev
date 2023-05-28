@@ -14,12 +14,9 @@ body{
 .main{
     width: 350px;
     height: 600px;
-    /* border: 2px solid black; */
-    /* border: 2px solid black; */
     margin: 30px auto;
     border-radius: 15px;
     background-color: #f0f0f0;
-    /* background-color: white; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -34,7 +31,6 @@ body{
 }
 
 .upper {
-    /* border: 2px solid green; */
     height: 150px;
     margin: 15px;
     display: flex;
@@ -44,7 +40,6 @@ body{
 }
 
 .result{
-    /* border: 2px solid white; */
     color: white;
     text-align: right;
 }
@@ -59,26 +54,33 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
-    /* margin-left: 10px;*/
     margin-bottom: 25px; 
     font-family: 'M PLUS Rounded 1c', 'Avenir Next', Helvetica, sans-serif;
     background-color: rgb(240, 240, 240);
     border-radius: 10px;
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
     box-shadow: inset 5px 5px 12px #ffffff,5px 5px 12px rgba(0,0,0,.16)
 }
 
-.button:nth-child(13){
+.button:nth-child(15), .button:nth-child(4),
+.button:nth-child(8),.button:nth-child(12),.button:nth-child(16){
     color: #a060fa;
+    font-size: 19px;
 }
 
 .lower{
-    /* border: 2px solid red; */
     padding: 10px;
     margin-top: 15px;
     display: grid;
     grid-template-columns:repeat(4,1fr);
-    /* justify-content: center;
-    align-content: center; */
     place-items: center;
+}
+
+#ac{
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: #a060fa;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
 }

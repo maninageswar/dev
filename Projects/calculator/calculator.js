@@ -3,27 +3,30 @@ let result = document.querySelector(".result")
 let input = document.querySelector(".input")
 
 let number =""
-let result_number =0
+const operations=["+","-","/","*"]
 buttons.forEach(button=>{
     button.onclick=()=>{
-        switch(button.innerText){
-            case "=":
-                result.innerText=eval(input.innerText)
-                break
-            case "<":
-                if (input.innerText){
-                    input.innerText=input.innerText.slice(0,-1)
-                }
-                break
-            default:
-                number+=button.innerText
-                input.innerText=number
+        if(operations.includes(button.innerText)){
+            if (result.innerText!=0){
+            result.innerText=0
+            number+=button.innerText
+            input.innerText=number
+        }}else if(button.innerText==="<"){
+            if (input.innerText!=0){
+            c=number.slice(0,-1)
+            number=c
+            input.innerText=number
+            result.innerText=eval(number)
+        }
+        }else if(button.innerText=="ac"){
+            number=""
+            input.innerText=0
+            result.innerText=0
+        }
+        else{
+            number+=button.innerText
+            input.innerText=number    
+            result.innerText=eval(number)
         }
     }
 })
-
-
-
-// if (operations.includes(button.innerText)){
-//     // result_number =0
-// }
