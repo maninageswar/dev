@@ -218,7 +218,7 @@
 // console.log(h)
 // console.log(k)
 
-// ******************************************** higher order functions(very important) ********************************************
+// ******************************************** higher order functions(very important map, reduce, filter) ********************************************
 
 // map
 // let result = [1,2,3,4,5].map(number => number*2)
@@ -312,7 +312,44 @@
 //       console.log(key)
 //   }
 
-let s="1234+1234-1234/12348*1234"
-// const myArray = s.split("+");
-const myArray = eval(s);
-console.log(myArray)
+// let s="1234+1234-1234/12348*1234"
+// // const myArray = s.split("+");
+// const myArray = eval(s);
+// console.log(myArray)
+
+// const arr=[23,24,25,26,27,28,29]
+// for (let i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
+// console.log(" ")
+
+// for (let i in arr){
+//     // console.log("i",i)
+//     console.log(i)
+// }
+
+// console.log(" ")
+
+// for (let i of arr){
+//     console.log(i)
+// }
+
+// arr.forEach((i,j,arr)=>{console.log(i,j,arr)})
+
+// let fun=(a,b)=>{
+//     return a+b
+// }
+// console.log(fun(1,2))
+
+
+const actors=[{name:"jonnay",networth:10000000000},
+              {name:"Amber",networth:1000},
+              {name:"ronaldo",networth:10000000000000000}]
+// console.log(actors.filter(actor=>actor.networth>1000))
+actors.map(actor=>{actor.networth+=1})
+actors.forEach(actor=>{
+    // if (actor.networth>100000000){
+    //     console.log(actor.name)
+    // }
+    console.log(actor.networth)
+})
