@@ -11,7 +11,7 @@ buttons.forEach(button=>{
                 result.innerText=0
                 number+=button.innerText
                 input.innerText=number
-        }}else if(button.innerText==="<"){
+        }}else if(button.innerText==="←"){
             if (input.innerText!=0){
                 number=number.slice(0,-1)
                 calculate()

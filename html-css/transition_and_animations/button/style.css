@@ -1,0 +1,23 @@
+.button{
+    background-color: pink;
+    border: 2px solid rgb(242, 68, 97);
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    /* transition: transform 0.3s,background-color 0.3s,color 1s; */
+    transition: all 0.3s;
+    
+}
+
+.clsbutton{
+    margin: 300px auto;
+    width: 150px;
+    /* border: 2px solid rgb(242, 68, 97); */
+}
+
+.button:hover{
+    transform: translateY(-20px);
+    background-color: rgb(242, 68, 97);
+    color: white;
+}

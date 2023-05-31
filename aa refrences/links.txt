@@ -1,0 +1,12 @@
+min width and max width
+https://www.youtube.com/watch?v=YjtunZW7jxw
+
+
+border boxing
+https://www.youtube.com/watch?v=WlGQdgy-M6w
+
+flex boxing
+https://www.youtube.com/watch?v=tXIhdp5R7sc&t=369s
+
+css animations
+https://www.youtube.com/watch?v=SgmNxE9lWcY

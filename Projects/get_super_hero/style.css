@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Press+Start+2P&display=swap');
+
+
+body{
+  background-image: url(gif2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'M PLUS Rounded 1c', 'Avenir Next', Helvetica, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+.main{
+  /* border: 2px solid red; */
+  width: 500px;
+  height: 800px;
+  margin: 100px auto;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1.7), 0 6px 20px 0 rgba(0,0,0,1.19);
+}
+.container{
+    display: inline;
+    font-size: 30px;
+    color: red;
+}
+
+.image {
+    height: fit-content;
+    position: relative;
+    width: fit-content;
+    margin-right: 1.4rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    color: white;
+    z-index:1;
+    /* border: 2px solid green; */
+  }
+
+  .image::after{
+    content:"";
+    position:absolute;
+    background: linear-gradient(0deg,        rgba(39,38,42,1) 0%, rgba(255,255,255,0)     60%);
+    z-index:1;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    /* border: 2px solid red; */
+  }
+  
+  .imagetext {
+    font-size: 2rem;
+    position: relative;
+    width: 200px;
+    /* line-height: 50px; */
+    z-index:2;
+    /* border: 2px solid red; */
+    margin: 20px auto;
+  }
+
+  .divsearch{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .search_input{
+    background-color: black;
+    width: 250px;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  #input{
+    background: none;
+    outline: none;
+    border: none;
+    padding: none;
+    font-size: 1.5rem; 
+    color: white;
+    margin-left: 15px;
+  }
+
+  #search,#getrhero{
+    background-color: black;
+    border: none;
+    padding: 10px;
+    color:#d2d3e4;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

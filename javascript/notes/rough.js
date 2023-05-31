@@ -342,14 +342,35 @@
 // console.log(fun(1,2))
 
 
-const actors=[{name:"jonnay",networth:10000000000},
-              {name:"Amber",networth:1000},
-              {name:"ronaldo",networth:10000000000000000}]
-// console.log(actors.filter(actor=>actor.networth>1000))
-actors.map(actor=>{actor.networth+=1})
-actors.forEach(actor=>{
-    // if (actor.networth>100000000){
-    //     console.log(actor.name)
-    // }
-    console.log(actor.networth)
-})
+// const actors=[{name:"jonnay",networth:10000000000},
+//               {name:"Amber",networth:1000},
+//               {name:"ronaldo",networth:10000000000000000}]
+// // console.log(actors.filter(actor=>actor.networth>1000))
+// actors.map(actor=>{actor.networth+=1})
+// actors.forEach(actor=>{
+//     // if (actor.networth>100000000){
+//     //     console.log(actor.name)
+//     // }
+//     console.log(actor.networth)
+// })
+
+// let foo=()=>{
+//     console.log("i called fun")
+// }
+
+// foo
+
+
+powerstats= {
+    "intelligence": "56",
+    "strength": "80",
+    "speed": "25",
+    "durability": "85",
+    "power": "46",
+    "combat": "65"
+    };
+keys=Object.keys(powerstats)
+for (let i of keys){
+    console.log(i+":"+powerstats[`${i}`])
+}
+
