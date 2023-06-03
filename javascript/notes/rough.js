@@ -361,16 +361,57 @@
 // foo
 
 
-powerstats= {
-    "intelligence": "56",
-    "strength": "80",
-    "speed": "25",
-    "durability": "85",
-    "power": "46",
-    "combat": "65"
-    };
-keys=Object.keys(powerstats)
-for (let i of keys){
-    console.log(i+":"+powerstats[`${i}`])
+// powerstats= {
+//     "intelligence": "56",
+//     "strength": "80",
+//     "speed": "25",
+//     "durability": "85",
+//     "power": "46",
+//     "combat": "65"
+//     };
+// keys=Object.keys(powerstats)
+// for (let i of keys){
+//     console.log(i+":"+powerstats[`${i}`])
+// }
+
+//// Promices
+// const soup = new Promise((resolve, reject) => {
+//     isready=[true,false][Math.floor(Math.random() * 2)]
+//     setTimeout(()=>{
+//     isready ? resolve("Soup is ready"):reject("no soup today")},3000)
+// })
+
+// console.log(soup.then(success=>console.log(success))
+//                 .catch(error=>console.log(error)))
+
+// const getsoup= async()=>{
+//     data={rating:0,tip:0}
+//     try{
+//         const a=await soup
+//         console.log(a)
+//         data.rating=5
+//         data.tip=5
+//         return data
+//     } catch(error){
+//         console.log(error)
+//         data.rating=0
+//         data.tip=0
+//         return data
+//     }
+
+// }
+
+// console.log("1")
+// getsoup().then(value=>console.log(value))
+// console.log("2")
+
+function one(){
+    console.log("fun1")
+    two()
 }
 
+function two(){
+    console.log("fun2")
+}
+
+one()
