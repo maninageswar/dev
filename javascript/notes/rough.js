@@ -374,36 +374,36 @@
 //     console.log(i+":"+powerstats[`${i}`])
 // }
 
-//// Promices
-// const soup = new Promise((resolve, reject) => {
-//     isready=[true,false][Math.floor(Math.random() * 2)]
-//     setTimeout(()=>{
-//     isready ? resolve("Soup is ready"):reject("no soup today")},3000)
-// })
+// Promices
+const soup = new Promise((resolve, reject) => {
+    isready=[true,false][Math.floor(Math.random() * 2)]
+    setTimeout(()=>{
+    isready ? resolve("Soup is ready"):reject("no soup today")},3000)
+})
 
-// console.log(soup.then(success=>console.log(success))
-//                 .catch(error=>console.log(error)))
+console.log(soup.then(success=>console.log(success))
+                .catch(error=>console.log(error)))
 
-// const getsoup= async()=>{
-//     data={rating:0,tip:0}
-//     try{
-//         const a=await soup
-//         console.log(a)
-//         data.rating=5
-//         data.tip=5
-//         return data
-//     } catch(error){
-//         console.log(error)
-//         data.rating=0
-//         data.tip=0
-//         return data
-//     }
+const getsoup= async()=>{
+    data={rating:0,tip:0}
+    try{
+        const a=await soup
+        console.log(a)
+        data.rating=5
+        data.tip=5
+        return data
+    } catch(error){
+        console.log(error)
+        data.rating=0
+        data.tip=0
+        return data
+    }
 
-// }
+}
 
-// console.log("1")
-// getsoup().then(value=>console.log(value))
-// console.log("2")
+console.log("1")
+getsoup().then(value=>console.log(value))
+console.log("2")
 
 function one(){
     console.log("fun1")
