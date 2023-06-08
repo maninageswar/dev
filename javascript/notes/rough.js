@@ -374,44 +374,58 @@
 //     console.log(i+":"+powerstats[`${i}`])
 // }
 
-// Promices
-const soup = new Promise((resolve, reject) => {
-    isready=[true,false][Math.floor(Math.random() * 2)]
-    setTimeout(()=>{
-    isready ? resolve("Soup is ready"):reject("no soup today")},3000)
-})
+//  ******************************************** Promices  ********************************************
+// const soup = new Promise((resolve, reject) => {
+//     isready=[true,false][Math.floor(Math.random() * 2)]
+//     setTimeout(()=>{
+//     isready ? resolve("Soup is ready"):reject("no soup today")},3000)
+// })
 
-console.log(soup.then(success=>console.log(success))
-                .catch(error=>console.log(error)))
+// console.log(soup.then(success=>console.log(success))
+//                 .catch(error=>console.log(error)))
 
-const getsoup= async()=>{
-    data={rating:0,tip:0}
-    try{
-        const a=await soup
-        console.log(a)
-        data.rating=5
-        data.tip=5
-        return data
-    } catch(error){
-        console.log(error)
-        data.rating=0
-        data.tip=0
-        return data
-    }
+// const getsoup= async()=>{
+//     data={rating:0,tip:0}
+//     try{
+//         const a=await soup
+//         console.log(a)
+//         data.rating=5
+//         data.tip=5
+//         return data
+//     } catch(error){
+//         console.log(error)
+//         data.rating=0
+//         data.tip=0
+//         return data
+//     }
 
-}
+// }
 
-console.log("1")
-getsoup().then(value=>console.log(value))
-console.log("2")
+// console.log("1")
+// getsoup().then(value=>console.log(value))
+// console.log("2")
 
-function one(){
-    console.log("fun1")
-    two()
-}
+// function one(){
+//     console.log("fun1")
+//     two()
+// }
 
-function two(){
-    console.log("fun2")
-}
+// function two(){
+//     console.log("fun2")
+// }
 
-one()
+// one()
+
+const weeks=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+const months=['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+
+var date = new Date("2023-06-08");
+console.log(typeof date)
+// console.log(date?date.getDate().length===2)
+console.log(weeks[date.getDay()-1])
+console.log(months[date.getMonth()])
+
+// var date = new Date(DATE);
+actual_date=weeks[date.getDay()-1]+","+date.getDate()+" "+months[date.getMonth()]
+console.log(actual_date)

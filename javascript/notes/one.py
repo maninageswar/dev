@@ -35,6 +35,14 @@
 # if "j" in d:
 #     print(d['j'])
 
-print("hi",end="")
-print("hello")
-print("hello")
+# print("hi",end="")
+# print("hello")
+# print("hello")
+
+import calendar
+l=[]
+
+for i in range(1,13):
+    l.append(calendar.month_abbr[i].lower())
+
+print(l)

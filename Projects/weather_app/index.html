@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horizontal-scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- keep the below line to style calender for future -->
+    <!-- <link rel="stylesheet" href="./dycalendar.css"> -->
+</head>
+<body>    
+<div class="container">
+    <div class="search">
+        <!-- keep the below line to give custom calender the css styles for the below element has been written -->
+        <!-- <div id="hcalender"></div> -->
+        <div class="topleft">
+            <img src="./images/location.png" alt="" height="150px">
+            <span class="top-span">
+                <img src="./images/icons8-search-100.png" alt="">
+                <input type="text" class="topinput" id="topinput" placeholder="search city">
+            </span>
+        </div>
+        <!-- keep the below line to give custom calender -->
+        <!-- <img src="./images/calendar.png" class="calender-icon" onclick="calender(this)"> -->
+        <input type="date" name="" id="date">
+        <img src="./images/icons8-enter-100.png" class="enter" onclick="enter()">
+    </div>
+
+    <div class="main">
+        <!-- <div class="main_image"><img src="./images/icons8-sunshine-500.png" alt="temp image"></div> -->
+        <div class="main_image"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="temp image" class="main_image_icon"></div>
+        <div class="main_text"><h4 class="main_text_H4">Partly cloudy</h4></div>
+        <div class="main_temp">24°</div>
+        <div class="main_subfields">
+            <div class="wind"><img src="./images/icons8-wind-100.png" alt=""><h4 class="wind_H4">8 km/h</h4></div>
+            <div class="humidity"><img src="./images/icons8-humidity-100.png" alt=""><h4 class="humidity_H4">47%</h4></div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div><h3 class="showdate">Thu,08 jun</h3></div>
+        <div class="wrapper">
+            <div class="left-button"><button class="scrollLeft"><img src="./images/left-arrow.png" alt=""></button></div>
+            <div class="wrapper-inside">
+                <!-- <div class="item">
+                    <p>9:00 AM</p>
+                    <img src="./images/sun.png" alt="" srcset="">
+                    <h2>30°</h2>
+                </div>-->
+            </div>
+            <div class="right-button"><button class="scrollRight"><img src="./images/right-arrow.png" alt=""></button></div>
+        </div>
+    </div>
+</div>
+    
+<script src="./scroll.js"></script>
+<!-- keep the below line to style calender for future -->
+<!-- <script src="./dycalendar.js"></script> -->
+</body>
+</html>
+
