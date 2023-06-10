@@ -37,7 +37,7 @@ let get_hourly_weather=async(city,date)=>{
         let hours=result.forecast.forecastday[0].hour
         document.querySelector(".main_image_icon").src=`${result.current.condition.icon}`
         document.querySelector(".main_text_H4").innerText=`${result.current.condition.text}`
-        document.querySelector(".main_temp").innerText=`${result.current.temp_c}`
+        document.querySelector(".main_temp").innerText=`${result.current.temp_c}°`
         document.querySelector(".wind_H4").innerText=`${result.current.wind_kph}`
         document.querySelector(".humidity_H4").innerText=`${result.current.humidity}`
         for (hour of hours){
@@ -46,7 +46,7 @@ let get_hourly_weather=async(city,date)=>{
             `<div class="item">
                 <p>${timeString12hr}</p>
                 <img src="${hour.condition.icon}" alt="" srcset="">
-                <h2>${hour.temp_c}</h2>
+                <h2>${hour.temp_c}°C</h2>
             </div>`
         }
     } catch (error) {
