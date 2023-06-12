@@ -259,7 +259,6 @@
 // console.log(actors.filter(z=>z.name)) //--> [{ name: "jonnay", networth: 10000000000 },{ name: "Amber", networth: 1000 },{ name: "ronaldo", networth: 10000000000000000 },]
 // console.log(actors.reduce(z=>z.name)) //--> undefined
 
-
 // ******************************************** understanding the difference between map reduce filter ********************************************
 
 // k = [1, 2, 3, 4, 5, 6, 7];
@@ -270,7 +269,6 @@
 // o=k.filter((a) => a > 4).map((b) => b + "#######"); //-->[ '5#######', '6#######', '7#######' ]
 // console.log(o)
 // console.log(o.reduce((a,b)=>a+b)) //--> 5#######6#######7#######
-
 
 // k = [13, 24, 35, 44, 58, 65, 79]
 // k = [13, 24, 35, 44, 58, 65, 79]
@@ -297,7 +295,7 @@
 // }
 
 // v.forEach(element => {
-//   console.log(element) 
+//   console.log(element)
 // });
 
 // ////// ************** important  for each only works on arrays
@@ -341,7 +339,6 @@
 // }
 // console.log(fun(1,2))
 
-
 // const actors=[{name:"jonnay",networth:10000000000},
 //               {name:"Amber",networth:1000},
 //               {name:"ronaldo",networth:10000000000000000}]
@@ -359,7 +356,6 @@
 // }
 
 // foo
-
 
 // powerstats= {
 //     "intelligence": "56",
@@ -416,16 +412,24 @@
 
 // one()
 
-const weeks=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
-const months=['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+// const weeks=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+// const months=['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
-
-var date = new Date("2023-06-08");
-console.log(typeof date)
+// var date = new Date("2023-06-08");
+// console.log(typeof date)
 // console.log(date?date.getDate().length===2)
-console.log(weeks[date.getDay()-1])
-console.log(months[date.getMonth()])
+// console.log(weeks[date.getDay()-1])
+// console.log(months[date.getMonth()])
 
 // var date = new Date(DATE);
-actual_date=weeks[date.getDay()-1]+","+date.getDate()+" "+months[date.getMonth()]
-console.log(actual_date)
+// actual_date=weeks[date.getDay()-1]+","+date.getDate()+" "+months[date.getMonth()]
+// console.log(actual_date)
+
+// const s=1
+// s=3
+// console.log(s)
+
+const arr = [1, 2, "sai"];
+f = arr.map((i) => i + 2);
+
+console.log(f);
