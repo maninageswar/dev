@@ -429,7 +429,11 @@
 // s=3
 // console.log(s)
 
-const arr = [1, 2, "sai"];
-f = arr.map((i) => i + 2);
+// const arr = [1, 2, "sai"];
+// f = arr.map((i) => i + 2);
 
-console.log(f);
+// console.log(f);
+
+var x
+console.log(x)
+x=2
