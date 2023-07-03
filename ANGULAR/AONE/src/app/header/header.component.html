@@ -1,0 +1,220 @@
+<p>header works!</p>
+
+<!-- STRING INTERPOLATION -->
+<h2>{{title}}</h2>
+<h2>{{test(2)}}</h2>
+<h3>{{d}}</h3>
+ 
+<!-- PROPERTY BINDING -->
+<button [disabled]="isdisabled">Submit</button>
+
+<h2 [class]="spec">special</h2>
+
+<!-- Conditional calsses -->
+<!-- here in the below line the values of active and inactive are comig from ts file -->
+<h1 [class]="isactive?act:inact">super man</h1>
+
+<!-- here in the below line the hump anf humping are coded go check in cs file you can find classes with hump and humping  -->
+<h1 [class]="!isactive?'hump':'humping'">HULK</h1>
+
+<!-- giving multiple classes -->
+<h1 [class]="{c1:class1,c2:class2}">iron man</h1>
+
+<!-- style binding -->
+<h1 [style]="ant_man_styles">ant man</h1>
+
+<h1 [style]="{color:'yellow',background:'black'}">Thor</h1>
+
+<h1 [style.color]="grey">Thor</h1>
+
+<!-- event binding -->
+<h3>Counter:{{Counter_value}}</h3>
+<button (click)="Change_Counter($event)">increaseCounter</button>
+<button (click)="Change_Counter($event)">decreaseCounter</button>
+<!-- <button (click)="increase_Counter('red')">test</button> -->
+
+
+Name : <input type="text" id="inputName" (input)="keyUp($event)">
+<h1>Name value:{{input_Value}}</h1>
+
+<!-- [(ngModel)] -->
+[(ngModel)]: <input type="text" [(ngModel)]="city">
+<p>[(ngModel)] Value:{{city}}</p>
+
+<!-- DIRECTIVIES -->
+
+<!--STRUCTURAL DIRECTIVIES -->
+
+<!-- *ngIf -->
+<p *ngIf="show">ngif DIRECTIVIE</p>
+<button (click)="ngIfClick()">ngIf Click</button>
+
+<!-- *ngIf else -->
+<h3 *ngIf="names; else showElse">loading.......</h3>
+
+<ng-template #showElse>
+    Showing else as the ngIf does not have a value
+</ng-template>
+
+
+<!-- *ngFor -->
+<div class="table">
+<table border="1">
+    <tr *ngFor="let m of movies">
+        <td>{{m}}</td>
+    </tr>
+</table>
+
+<table border="1">
+    <tr>
+        <td *ngFor="let m of movies">{{m}}</td>
+    </tr>
+</table>
+</div>
+
+<!-- *ngSwitch -->
+<p>operation will be performed on the numbers 10 and 4</p>
+Eneter operation symbol:<input type="text" [(ngModel)]="op">
+<div [ngSwitch]="op">
+    <div *ngSwitchCase="'+' ">{{n1}}+{{n2}}={{n1+n2}}</div>
+    <div *ngSwitchCase="'-' ">{{n1}}-{{n2}}={{n1-n2}}</div>
+    <div *ngSwitchCase="'*' ">{{n1}}*{{n2}}={{n1*n2}}</div>
+    <div *ngSwitchCase="'/' ">{{n1}}/{{n2}}={{n1/n2}}</div>
+    <div *ngSwitchDefault>Please provide a appropriate operator</div>
+</div>
+
+
+<!--ATTRIBUTE DIRECTIVIES -->
+<!-- ngClass -->
+<div class="container">
+    <div class="text">
+        <h3 [ngClass]="{
+            red: color==='red',
+            green: color==='green',
+            blue: color==='blue'
+        }">Click the below coloured buttons to change the background color of the text to color of the clicked button</h3>
+    </div>
+    <div class="buttons">
+        <button (click)="ChangeTextColor('red')" style="background-color:red;color:white">red</button>
+        <button (click)="ChangeTextColor('green')" style="background-color:green;color:white">green</button>
+        <button (click)="ChangeTextColor('blue')" style="background-color:blue;color:white">blue</button>
+    </div>
+</div>
+
+
+<!-- ngStyle -->
+<!-- in the line 111 you need to know that if you are using the css style property which has "-" in it like background-color you have to give it in single quotes 'background-color' -->
+<p [ngStyle]="{
+    color: toggle ? 'white':'black',
+    'background-color': toggle ? 'black':'white'
+}">Click the toggle button to change the style of the text</p>
+<h1><button style="background-color:blue;color:white" (click)="ChnageToggle()">toggle</button></h1>
+
+<!-- ngModel -->
+
+<input type="number" [(ngModel)]="luclyNumber">
+
+<h2>Data Binding</h2>
+<input type="text" [(ngModel)]="inputValue">
+<p>{{inputValue}}</p>
+<button [disabled]="isDisabled" (click)="CheckForm()">Check Form</button>
+
+<div [ngSwitch]="luclyNumber">
+    <p *ngSwitchCase="1">one</p>
+    <p *ngSwitchCase="2">two</p>
+    <p *ngSwitchCase="3">three</p>
+    <p *ngSwitchCase="4">four</p>
+    <p *ngSwitchCase="5">five</p>
+    <p *ngSwitchDefault>Enter 1 to 5</p>
+</div>
+
+
+<!-- PRACTICE -->
+
+<h1 style="text-align: center;">---------------------------- PRACTICE ----------------------------</h1>
+
+
+<div class="ngif">
+    <div class="ngifbuttons">
+        <button (click)="SetResult('Approve')" style="background-color:red;color:white">Approve</button>
+        <button (click)="SetResult('Reject')" style="background-color:green;color:white">Reject</button>
+    </div>
+    <div class="ngiftext">
+        <div *ngIf="result==='Approve' then yes; else no"></div>
+        <ng-template #yes>Your Application has been approved</ng-template>
+        <ng-template #no>Sorry Your Application has been Rejected</ng-template>
+    </div>
+</div>
+
+<p *ngFor="let number of numbers; let i = index">{{i+1}}-{{number}}</p>
+<br>
+<p>you can't use two structural drectives in a single element</p>
+<br>
+<p *ngFor="let number of numbers; let i = index"><span *ngIf="(i+1)%2==0">{{i+1}}-{{number}}</span></p>
+
+<br>
+<P style="text-align: center;">---------------------------- PROJECT THAT FINDS THE NUMBERS THAT ARE DIVISIBLE BY CERTAIN NUMBERS ----------------------------</P>
+<br>
+<div class="divisible_project">
+    <div class="div_buttons">
+        <button style="background-color:green;color:white; border:none" (click)="Highlight(2)">numbers divisible by 2</button>
+        <button style="background-color:green;color:white; border:none" (click)="Highlight(3)">numbers divisible by 3</button>
+        <button style="background-color:green;color:white; border:none" (click)="Highlight(5)">numbers divisible by 5</button>
+        <button style="background-color:green;color:white; border:none" (click)="Highlight(10)">numbers divisible by 10</button>
+        <button [disabled]="isClear" (click)="Highlight(1)">clear</button>
+    </div>
+    <div class="div_numbers">
+        <h3 #num class="d_number">1</h3>
+        <h3 #num class="d_number">2</h3>
+        <h3 #num class="d_number">3</h3>
+        <h3 #num class="d_number">4</h3>
+        <h3 #num class="d_number">5</h3>
+        <h3 #num class="d_number">6</h3>
+        <h3 #num class="d_number">7</h3>
+        <h3 #num class="d_number">8</h3>
+        <h3 #num class="d_number">9</h3>
+        <h3 #num class="d_number">10</h3>
+        <h3 #num class="d_number">11</h3>
+        <h3 #num class="d_number">12</h3>
+        <h3 #num class="d_number">13</h3>
+        <h3 #num class="d_number">14</h3>
+        <h3 #num class="d_number">15</h3>
+        <h3 #num class="d_number">16</h3>
+        <h3 #num class="d_number">17</h3>
+        <h3 #num class="d_number">18</h3>
+        <h3 #num class="d_number">19</h3>
+        <h3 #num class="d_number">20</h3>
+        <h3 #num class="d_number">21</h3>
+        <h3 #num class="d_number">22</h3>
+        <h3 #num class="d_number">23</h3>
+        <h3 #num class="d_number">24</h3>
+        <h3 #num class="d_number">25</h3>
+        <h3 #num class="d_number">26</h3>
+        <h3 #num class="d_number">27</h3>
+        <h3 #num class="d_number">28</h3>
+        <h3 #num class="d_number">29</h3>
+        <h3 #num class="d_number">30</h3>
+        <h3 #num class="d_number">31</h3>
+        <h3 #num class="d_number">32</h3>
+        <h3 #num class="d_number">33</h3>
+        <h3 #num class="d_number">34</h3>
+        <h3 #num class="d_number">35</h3>
+        <h3 #num class="d_number">36</h3>
+        <h3 #num class="d_number">37</h3>
+        <h3 #num class="d_number">38</h3>
+        <h3 #num class="d_number">39</h3>
+        <h3 #num class="d_number">40</h3>
+        <h3 #num class="d_number">41</h3>
+        <h3 #num class="d_number">42</h3>
+        <h3 #num class="d_number">43</h3>
+        <h3 #num class="d_number">44</h3>
+        <h3 #num class="d_number">45</h3>
+        <h3 #num class="d_number">46</h3>
+        <h3 #num class="d_number">47</h3>
+        <h3 #num class="d_number">48</h3>
+        <h3 #num class="d_number">49</h3>
+        <h3 #num class="d_number">50</h3>
+    </div>
+</div>
+
+
