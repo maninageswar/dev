@@ -1,5 +1,14 @@
-<h1>this is app companent</h1>
-<h1>this is header companent</h1>
-<app-header></app-header>
-<!-- <h1>this is divisibility companent</h1>
-<app-divisibility></app-divisibility> -->
+<h1>this is "app-companent" [Parent Component]</h1>
+
+<div>there is a variable in parent companent ts file with name "variable_in_parent_component" and it's value is {{variable_in_parent_component}}</div>
+<div class="parentComponent">
+    <h1>Parent component</h1>
+    <h3>data passing from parent component to child component enter the data in the input field below and see the output in child component</h3>
+    <input type="text" [(ngModel)]="p_component_input">
+    <p>The input value from child component is :{{dateFromChildComponent}}</p>
+</div>
+<h1>this is "header-companent" [Child Component to app component]</h1>
+<app-header (sendMeaasgeFromChild)="receiveMessage($event)" [child_component]="variable_in_parent_component" [c_names]="p_names" [c_movie]="p_movie" [c_component_output]="p_component_input"></app-header>
+
+<h1>this is "parent-companent"</h1>
+<app-parent></app-parent>

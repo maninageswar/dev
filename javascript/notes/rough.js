@@ -434,6 +434,32 @@
 
 // console.log(f);
 
-var x
-console.log(x)
-x=2
+// var x
+// console.log(x)
+// x=2
+
+// S="st1ri2ng3"
+// f=S.replace(/[0-9]/g, '');
+// console.log(f);
+
+// for (let x of S){
+//     t=Number(x)
+//     // console.log(`${x}---${t}`);
+//     // if (Number(x)===t){
+//     //     S=S.replace(x,'')
+//     // }
+//     console.log(t);
+// }
+
+// a=Number("1");
+// b=Number("s");
+// console.log(a);
+// console.log(b);
+// console.log(b===a);
+// console.log(b==a);
+// console.log(typeof a);
+// console.log(typeof b);
+
+d=[1,2,3,4]
+d[d.length]=5
+console.log(d);

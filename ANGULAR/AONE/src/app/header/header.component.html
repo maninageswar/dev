@@ -1,5 +1,16 @@
 <p>header works!</p>
+<div class="childComponent">
+    <h1>Child component</h1>
+    <h3>data passing from child component to parednt component enter the data in the input field below and see the output in parent component</h3>
+    <input type="text" (input)="SendDateFromChild($event)">
+    <p>The input value from parent component is :{{c_component_output}}</p>
+</div>
 
+
+
+<div>there ia avariable in child compont ts file with name "child_component" and its value is coming from parent component which is {{child_component}}</div>
+<div *ngFor="let name of c_names">{{name}}</div>
+<div>{{c_movie}}</div>
 <!-- STRING INTERPOLATION -->
 <h2>{{title}}</h2>
 <h2>{{test(2)}}</h2>
@@ -217,4 +228,32 @@ Eneter operation symbol:<input type="text" [(ngModel)]="op">
     </div>
 </div>
 
+<!-- DEFAULT PIPES -->
+<p>{{name}}</p>
+<p>{{name | uppercase}}</p>
+<p>{{name | titlecase}}</p>
+<p>{{name | lowercase}}</p>
+<p>{{salary}}</p>
+<p>{{salary | currency}}</p>
+<p>{{salary | currency:'INR'}}</p>
+<p>{{ant_man_styles}}</p>
+<p>{{ant_man_styles | json}}</p>
+<p>{{dob}}</p>
+<p>{{dob | date}}</p>
+<p>{{dob | date:'dd/MM/yyyy'}}</p>
+<p>{{pnum}}</p>
+<p>{{pnum | percent}}</p>
+<p>{{city}}</p>
+<p>{{city | slice:2:7}}</p>
+<!-- AsyncPipe yet to learn --> 
 
+<!-- CUSTOM PIPES -->
+<!-- syntax to create custom pipe using angular cli "ng g p pipe-name" -->
+<!-- RNIS:Remove numbers in string -->
+<P>{{num_string}}</P>
+<P>{{num_string | rNIS}}</P>
+
+
+
+<p class="list1 list2" #list>hello</p>
+<button (click)="fun()">find Class list</button>

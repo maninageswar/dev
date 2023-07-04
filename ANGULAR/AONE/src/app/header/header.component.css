@@ -97,6 +97,7 @@ h2{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .div_buttons{
@@ -132,4 +133,11 @@ h2{
 .c8{
     background-color: black;
     color: white;
+}
+
+.childComponent{
+    background-color: #d8f5ff;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
 }

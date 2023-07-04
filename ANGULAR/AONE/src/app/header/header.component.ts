@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewChildren } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,8 @@ import { Component, ViewChild, ViewChildren } from '@angular/core';
 })
 export class HeaderComponent {
   
+  constructor(){}
+
   // Variables
   title='string interpollation'
   spec:string="special"
@@ -26,6 +28,11 @@ export class HeaderComponent {
   }
   city:string="Bengaluru"
   show:String=""
+  name="angular frameWORK"
+  salary=4000
+  dob=new Date()
+  pnum=0.98
+  num_string="st1ri2ng3"
 
   movies:string[]=["Transformers","Fast X","John Wick"]
 
@@ -104,7 +111,6 @@ export class HeaderComponent {
   }
 
   @ViewChildren('num') num:any;
-
   isClear:boolean=true
   Highlight(n:number){
     // remember in forEach if you are iterating through an object you have to give the element in () like forEach((element:any) => {}
@@ -112,6 +118,7 @@ export class HeaderComponent {
     this.num._results.forEach((element:any) => {
       if (n===1){
         element.nativeElement.className="d_number"
+        this.isClear=true
       }
       else{
       this.isClear=false
@@ -123,4 +130,26 @@ export class HeaderComponent {
     });
   }
 
+  @ViewChild('list') list:any
+  // console.log(this.list);
+  fun(){
+    this.d=this.list.nativeElement.classList
+    // this.d[this.d.length]='list3';
+    // this.d.push('list3')
+    console.log(this.d);
+    console.log(typeof this.d);
+  }
+
+  //Parent to child commnication 
+  @Input()child_component:string=""
+  @Input()c_names:any
+  @Input()c_movie:string=''
+  @Input()c_component_output:string=''
+  
+  //Child to parent commmunication
+  @Output()
+  sendMeaasgeFromChild=new EventEmitter() 
+  SendDateFromChild(e:any){
+    this.sendMeaasgeFromChild.emit(e.target.value)
+  }
 }
