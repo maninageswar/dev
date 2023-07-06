@@ -152,4 +152,47 @@ export class HeaderComponent {
   SendDateFromChild(e:any){
     this.sendMeaasgeFromChild.emit(e.target.value)
   }
+
+  word=''
+  nofChar:number=0
+  a=0
+  e=0
+  i=0
+  o=0
+  u=0
+  @ViewChild('analyseinput') ainput:any
+  analyseWords(){
+    this.word=this.ainput.nativeElement.value
+    this.nofChar=this.word.length
+    console.log(this.word);
+    this.a=0
+    this.e=0
+    this.i=0
+    this.o=0
+    this.u=0
+    for (let x of this.word){
+      switch(x) {
+        case 'a':
+          this.a+=1
+          console.log(this.a);
+          break;
+        case 'e':
+          this.e+=1
+          console.log(this.e);
+          break;
+        case 'i':
+          this.i+=1
+          console.log(this.i);
+          break;
+        case 'o':
+          this.o+=1
+          console.log(this.o);
+          break;
+        case 'u':
+          this.u+=1
+          console.log(this.u);
+          break;
+      }
+    }
+  }
 }

@@ -1,6 +1,36 @@
 .parentComponent{
     background-color: #f8dbe1;
-    width: 100%;
+    width: 50%;
     height: 200px;
     padding: 20px;
 }
+
+.Routing_Components{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    height: 50px;
+    background-color: rgb(154, 225, 201);
+    align-items: center;
+   
+}
+
+.Routing_Components a{
+    text-decoration: none;
+    width: 100%;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.Routing_Components a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.Routing_Components a:focus{
+    color: white;
+    background-color: black;
+}
+

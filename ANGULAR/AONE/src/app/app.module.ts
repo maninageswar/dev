@@ -9,6 +9,19 @@ import { DivisibilityComponent } from './divisibility/divisibility.component';
 import { RNISPipe } from './rnis.pipe';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { AdditionComponent } from './addition/addition.component';
+import { SubtractionComponent } from './subtraction/subtraction.component';
+import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NotfoundComponent } from './notfound/notfound.component';
+
+const routes:Routes=[
+  {path:'',component:NotfoundComponent},
+  {path:'add',component:AdditionComponent},
+  {path:'sub',component:SubtractionComponent},
+  {path:'mul',component:MultiplicationComponent},
+  {path:'**',component:NotfoundComponent},
+]
 
 @NgModule({
   declarations: [
@@ -17,12 +30,17 @@ import { ChildComponent } from './child/child.component';
     DivisibilityComponent,
     RNISPipe,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    AdditionComponent,
+    SubtractionComponent,
+    MultiplicationComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,10 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
   p_input=""
-  c_input=""
-
-  receiveMsg(msg:any){
-    this.c_input=msg
+  p_output=""
+  receiveMsg(msg:string){
+    this.p_output=msg
   }
-
 }

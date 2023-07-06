@@ -1,8 +1,8 @@
-<p>parent works!</p>
+<h1>Component Communication</h1>
+<h1>this is "parent-companent"</h1>
 <div class="p_component">
     <h1>Parent Component</h1>
     <input type="text" [(ngModel)]="p_input">
-    <p>data from child component is:{{c_input}}</p>
+    <p>data from child is:{{p_output}}</p>
 </div>
-<h1>this is "app-child"</h1>
-<app-child [c_output]="p_input" (send)="receiveMsg($event)"></app-child>
+<app-child (sendEmitter)="receiveMsg($event)" [c_output]="p_input"></app-child>

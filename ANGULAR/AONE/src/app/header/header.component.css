@@ -137,7 +137,15 @@ h2{
 
 .childComponent{
     background-color: #d8f5ff;
-    width: 100%;
+    width: 50%;
     height: 200px;
+    padding: 20px;
+}
+
+.analyse_words{
+    border: 2px solid green;
+    width: 500px;
+    height: 350px;
+    margin: auto;
     padding: 20px;
 }
