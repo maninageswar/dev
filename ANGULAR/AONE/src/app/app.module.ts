@@ -14,13 +14,16 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { SharedService } from './shared.service';
+import { CoursesComponent } from './courses/courses.component';
 
 const routes:Routes=[
   {path:'',component:NotfoundComponent},
   {path:'add',component:AdditionComponent},
   {path:'sub',component:SubtractionComponent},
   {path:'mul',component:MultiplicationComponent},
-  {path:'**',component:NotfoundComponent},
+  {path:'courses',outlet:'rout1',component:CoursesComponent},
+  // {path:'**',component:NotfoundComponent},
 ]
 
 @NgModule({
@@ -34,7 +37,8 @@ const routes:Routes=[
     AdditionComponent,
     SubtractionComponent,
     MultiplicationComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,7 @@ const routes:Routes=[
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,14 @@
 <!-- <p>multiplication works!</p> -->
-<div class="addComponent">
-    <div class="content">
-      <div>num 1:<input type="number" #num1/></div>
-      <div>num 2:<input type="number" #num2/></div>
-      <button (click)="Calculate(num1,num2)">mul</button>
-      <h2>Result:{{result}}</h2>
-    </div>
+<div class="addComponent addmobile">
+  <div class="content">
+    <div>num 1:<input type="number" #num1 /></div>
+    <div>num 2:<input type="number" #num2 /></div>
+    <button (click)="Calculate(num1, num2)">mul</button>
+    <h2>Result:{{ result }}</h2>
   </div>
+  <div class="ngForMobiles">
+    <h2>mobiles:</h2>
+    <p  *ngFor="let m of mobiles">{{ m }}</p>
+  </div>
+  <button (click)="AddMobile()">add mobile</button>
+</div>

@@ -13,6 +13,7 @@ export class AdditionComponent {
   }
 
   result=0
+  mobiles=this.sharedservice.mobiles
 
   Calculate(num1:any,num2:any){
     this.result=this.sharedservice.calculate(Number(num1.value),Number(num2.value),'add')

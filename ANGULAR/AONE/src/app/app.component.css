@@ -29,8 +29,12 @@
     color: white;
 }
 
-.Routing_Components a:focus{
+.R_Active{
     color: white;
     background-color: black;
 }
 
+.CourseButton{
+    margin-top: 20px;
+    margin-left: 50px;
+}

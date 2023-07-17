@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
 export class SharedService {
 
   constructor() { }
+  
+  mobiles=["apple","samsung"]
 
   calculate(num1:number,num2:number,operation:string){
     if (operation==='add'){

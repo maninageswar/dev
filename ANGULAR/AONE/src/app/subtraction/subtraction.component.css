@@ -18,3 +18,11 @@
 .content button{
     width: 50px;
 }
+
+.addmobile{
+    display: flex;
+}
+
+.ngForMobiles{
+    margin-right: 30px;
+}
