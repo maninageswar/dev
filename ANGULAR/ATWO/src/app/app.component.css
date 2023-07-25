@@ -13,7 +13,6 @@
     height: 50px;
     background-color: rgb(154, 225, 201);
     align-items: center;
-   
 }
 
 .Routing_Components a{
@@ -37,4 +36,8 @@
 .CourseButton{
     margin-top: 20px;
     margin-left: 50px;
+}
+
+.login{
+  color: blue;
 }

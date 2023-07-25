@@ -16,4 +16,7 @@ export class AppComponent {
   receiveMessage(msg:any){
     this.dateFromChildComponent=msg
   }
+
+  login:boolean=false
+
 }
