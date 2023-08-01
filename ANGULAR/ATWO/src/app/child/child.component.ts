@@ -10,6 +10,7 @@ export class ChildComponent {
 
   @Output() sendEmitter =new EventEmitter()
   sendData(e:any){
-    this.sendEmitter.emit(e.target.value)
+  this.sendEmitter.emit(e.target.value)
+  //   console.log(typeof e)
   }
 }

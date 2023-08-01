@@ -16,6 +16,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { SharedService } from './shared.service';
 import { CoursesComponent } from './courses/courses.component';
+import { FormsComponent } from './forms/forms.component';
 
 const routes:Routes=[
   {path:'',component:NotfoundComponent},
@@ -38,7 +39,8 @@ const routes:Routes=[
     SubtractionComponent,
     MultiplicationComponent,
     NotfoundComponent,
-    CoursesComponent
+    CoursesComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
