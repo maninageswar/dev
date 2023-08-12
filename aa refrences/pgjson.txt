@@ -1,0 +1,77 @@
+{ "owner_details":{ "owner_name":"akbar","owner_number":999999999,"owner_email":"example@gmail.com"},
+  "pg_details":{ "pg_name":"Sri Satya Sai PG", "pg_location":"some location","pg_type":"Gents","deposite":1000},
+  "avaliable_room_types":["single_sharing","duble_sharing","triple_sharing","four_sharing"],
+  "pg_room_rent_details":{"single_sharing":11000,"duble_sharing":9000,"triple_sharing":7000,"four_sharing":6000},
+  "amenities":{"washing_machines":true,"air_contioner":false,"wifi":true,"avaliability_of_tv_in_each_room":true,"hot_water":true,
+  "indoor_games":{"carrom":true,"foose_ball":true,"Snooker":true,"chess":true},"bike_parking_avaliability":true},
+  "food_avaliability":{"breakfast":true,"lunch":true,"dinner":true}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "owner_details": {
+    "owner_name": "akbar",
+    "owner_number": 999999999,
+    "owner_email": "example@gmail.com"
+  },
+  "pg_details": {
+    "pg_name": "Sri Satya Sai PG",
+    "pg_location": "some location",
+    "pg_address":{"house-no.":"house name","roadname/area/street/colony":"super","city":"banglore","state":"karnataka","pincode":"123456"},
+    "pg_type": ["Gents","ladies,"co-live"],
+    "avaliable_room_types": [
+        "single_sharing",
+        "duble_sharing",
+        "triple_sharing",
+        "four_sharing"
+      ],
+    "deposite": 1000
+  },
+  "pg_room_rent_details": {
+    "single_sharing": 11000,
+    "duble_sharing": 9000,
+    "triple_sharing": 7000,
+    "four_sharing": 6000
+  },
+  "amenities": {
+    "washing_machines": true,
+    "air_contioner": false,
+    "wifi": true,
+    "avaliability_of_tv_in_each_room": true,
+    "hot_water": true,
+    "indoor_games": {
+      "carrom": true,
+      "foose_ball": true,
+      "Snooker": true,
+      "chess": true
+    },
+    "bike_parking_avaliability": true
+  },
+  "food_avaliability": {
+    "breakfast": true,
+    "lunch": true,
+    "dinner": true
+  }
+}

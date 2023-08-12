@@ -1,2 +1,4 @@
-package com.telusko.firstproj.model;public class CloudVendor {
+package com.telusko.firstproj.model;
+
+public class CloudVendor {
 }

@@ -1,0 +1,140 @@
+{
+    "details": {
+        "groupCode": "GKUR1",
+        "groupName": "GKUR1",
+        "groupStatus": "Prospect",
+        "groupStartDate": "2023-08-10",
+        "groupEndDate": "2023-08-12",
+        "company": null,
+        "agency": null,
+        "booker": null,
+        "corporateMarketSegmentation": "CORPORATE",
+        "propertyMarketSegmentation": null,
+        "businessSource": null,
+        "businessSegment": null,
+        "industryType": null,
+        "hotelPickUpOnly": true,
+        "corporateId": null,
+        "elastic": true,
+        "commissionable": true,
+        "groupDescriptions": [
+            "some description"
+        ],
+        "bookingProcedures": [
+            "have to book"
+        ],
+        "agentText": [
+            "Agency text"
+        ],
+        "keywordItems": [
+            {
+                "id": 1,
+                "name": "keyword",
+                "tag": true
+            }
+        ],
+        "todayDate": "2023-08-10",
+        "keywords": [
+            "keyword"
+        ],
+        "externalIds": []
+    },
+    "pricingInventory": {
+        "releaseType": "RELEASE_DATE",
+        "releaseDays": null,
+        "releaseDate": "2023-08-09",
+        "rolling": false,
+        "extraPersonCharge": null,
+        "ratePlanCode": "",
+        "pricePlanCode": null,
+        "inventoryTypePricings": [
+            {
+                "inventoryTypeCode": "7H9P3IM18YFLTIRV0E2E",
+                "dayPricings": [
+                    {
+                        "inventoryTypeCode": "7H9P3IM18YFLTIRV0E2E",
+                        "flowThrough": false,
+                        "day": "2023-08-10",
+                        "id": null,
+                        "numberContracted": 0,
+                        "numberDeducted": 0,
+                        "guestCount": 1,
+                        "numberPickedUp": null,
+                        "numberAvailable": 0,
+                        "numberCancelled": 0,
+                        "numberOriginalContracted": 0,
+                        "roomPrice": null
+                    },
+                    {
+                        "inventoryTypeCode": "7H9P3IM18YFLTIRV0E2E",
+                        "flowThrough": false,
+                        "day": "2023-08-11",
+                        "id": null,
+                        "numberContracted": 0,
+                        "numberDeducted": 0,
+                        "guestCount": 1,
+                        "numberPickedUp": null,
+                        "numberAvailable": 0,
+                        "numberCancelled": 0,
+                        "numberOriginalContracted": 0,
+                        "roomPrice": null
+                    }
+                ]
+            },
+            {
+                "inventoryTypeCode": "ATMUK3AG1736OEXWOL12",
+                "dayPricings": [
+                    {
+                        "inventoryTypeCode": "ATMUK3AG1736OEXWOL12",
+                        "flowThrough": false,
+                        "day": "2023-08-10",
+                        "id": null,
+                        "numberContracted": 0,
+                        "numberDeducted": 0,
+                        "guestCount": 1,
+                        "numberPickedUp": null,
+                        "numberAvailable": 0,
+                        "numberCancelled": 0,
+                        "numberOriginalContracted": 0,
+                        "roomPrice": null
+                    },
+                    {
+                        "inventoryTypeCode": "ATMUK3AG1736OEXWOL12",
+                        "flowThrough": false,
+                        "day": "2023-08-11",
+                        "id": null,
+                        "numberContracted": 0,
+                        "numberDeducted": 0,
+                        "guestCount": 1,
+                        "numberPickedUp": null,
+                        "numberAvailable": 0,
+                        "numberCancelled": 0,
+                        "numberOriginalContracted": 0,
+                        "roomPrice": null
+                    }
+                ]
+            }
+        ]
+    },
+    "individualPolicies": {
+        "policyTypeCode": null,
+        "guaranteed": true,
+        "depositRequired": false,
+        "depositNumberOfNights": null,
+        "daysToArrival": "2",
+        "cancellationFee": "FirstNight",
+        "groupGuarantees": []
+    },
+    "groupPolicies": {
+        "groupDepositRequired": false,
+        "deposits": [],
+        "currency": "BHD"
+    },
+    "securityRules": {
+        "groupExcludedFromGroupList": true,
+        "maskRatesFromReservation": true,
+        "groupBookingProcedureHiddenInGroupList": false,
+        "groupDescriptionHiddenInGroupList": false,
+        "maskRatesFromGroupList": false
+    }
+}

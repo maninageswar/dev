@@ -460,6 +460,38 @@
 // console.log(typeof a);
 // console.log(typeof b);
 
-d=[1,2,3,4]
-d[d.length]=5
-console.log(d);
+// d=[1,2,3,4]
+// d[d.length]=5
+// console.log(d);
+
+// var d = new Date();
+// console.log(d)
+// d.setDate(d.getDate() - 2)
+//   console.log(y)
+
+// console.log(d.getMonth())
+//   console.log(d.getDate())
+//   console.log(d.getFullYear())
+
+// var d = new Date();
+// console.log(d)
+// console.log(d.getMonth()+1)
+
+// var two_days_ago = new Date(new Date().setDate(new Date().getDate() - 2));
+// console.log(two_days_ago)
+// console.log(two_days_ago.getUTCMonth()+1)
+
+errors={
+    "minlength": {
+        "requiredLength": 5,
+        "actualLength": 2
+    }
+}
+
+var pause_menu = {
+    pause_button : { someProperty : "prop1", someOther : null },
+    resume_button : { resumeProp : "prop", resumeProp2 : false },
+    quit_button : false
+};
+
+console.log(pause_menu.pause_button['someOther'])

@@ -1,0 +1,16 @@
+.formSection{
+  margin: 10px;
+}
+
+input.ng-invalid.ng-dirty.ng-touched{
+  border: 2px solid red;
+}
+
+/*input.ng-pristine.ng-invalid.ng-touched{*/
+/*  border: 2px solid red;*/
+/*}*/
+
+.error_message{
+  color: red;
+  margin-bottom: 2px;
+}

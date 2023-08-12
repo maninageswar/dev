@@ -1,0 +1,90 @@
+
+<div class="container mt-5">
+  <form [formGroup]="pgform" (ngSubmit)="showForm()">
+      <div formGroupName= "owner_details" class="formSection owner_details mb-4"><h3>owner details</h3>
+
+        <label class="mb-1" for="owner_name">name</label><span class="text-danger">*</span>
+        <input type="email" class="form-control" id="owner_name" formControlName="name">
+        <div *ngIf="pgform.controls.owner_details['controls']['name'].touched  &&  pgform.controls.owner_details['controls']['name'].errors?.required" class="error_message">name is mandatory</div>
+        <div *ngIf="pgform.controls.owner_details['controls']['name'].touched  &&  pgform.controls.owner_details['controls']['name'].value &&  pgform.controls.owner_details['controls']['name'].status=='INVALID'" class="error_message">name should have atleast 5 charecters</div>
+
+        <label class="mb-1 mt-3" for="owner_number">mobile</label><span class="text-danger">*</span>
+        <input type="text" class="form-control " id="owner_number" formControlName="phone">
+        <div *ngIf="pgform.controls.owner_details['controls']['phone'].touched  &&  pgform.controls.owner_details['controls']['phone'].errors?.required" class="error_message">mobile no. is mandatory</div>
+        <div *ngIf="pgform.controls.owner_details['controls']['phone'].touched  &&  pgform.controls.owner_details['controls']['phone'].value &&  pgform.controls.owner_details['controls']['phone'].status=='INVALID'" class="error_message">mobile no. must hast 10 digits</div>
+        <div *ngIf="pgform.controls.owner_details['controls']['phone'].touched  &&  pgform.controls.owner_details['controls']['phone'].value &&  pgform.controls.owner_details['controls']['phone'].errors?.pattern" class="error_message">mobile no. should only contain numbers</div>
+
+        <label class="mb-1 mt-3" for="owner_email">email address</label>
+        <input type="email" class="form-control " id="owner_email" placeholder="enter email" formControlName="email">
+        <div *ngIf="pgform.controls.owner_details['controls']['email'].touched  &&  pgform.controls.owner_details['controls']['email'].value &&  pgform.controls.owner_details['controls']['email'].errors?.pattern" class="error_message">please provide a valid email</div>
+
+      </div>
+
+      <div formGroupName= "pg_details" class="formSection pg_details mb-4"><h3>pg details</h3>
+
+        <label class="mb-1" for="pg_name">name</label><span class="text-danger">*</span>
+        <input type="email" class="form-control" id="pg_name" formControlName="pg_name">
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_name'].touched  &&  pgform.controls.pg_details['controls']['pg_name'].errors?.required" class="error_message">name is mandatory</div>
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_name'].touched  &&  pgform.controls.pg_details['controls']['pg_name'].value &&  pgform.controls.pg_details['controls']['pg_name'].status=='INVALID'" class="error_message">name should have atleast 5 charecters</div>
+
+        <label class="mb-1 mt-3" for="pg_location">location</label><span class="text-danger">*</span>
+        <input type="email" class="form-control" id="pg_location" placeholder="provide the location link" formControlName="pg_location">
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_location'].touched  &&  pgform.controls.pg_details['controls']['pg_location'].errors?.required" class="error_message">location is mandatory</div>
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_location'].touched  &&  pgform.controls.pg_details['controls']['pg_location'].value &&  pgform.controls.pg_details['controls']['pg_location'].status=='INVALID'" class="error_message">please provide a valid location</div>
+
+
+        <label class="mb-1 mt-3" for="pg_type">pg type</label><span class="text-danger">*</span>
+        <select class="form-select" aria-label="Default select example" id="pg_type" formControlName="pg_type">
+          <option value="gents">gents</option>
+          <option value="ladies">ladies</option>
+          <option value="colive">co-live</option>
+        </select>
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_type'].touched  &&  pgform.controls.pg_details['controls']['pg_type'].errors?.required" class="error_message">pg type is mandatory</div>
+
+        <label class="mb-1 mt-3" for="pg_room_type">pg room type</label><span class="text-danger">*</span>
+        <select class="form-select" aria-label="Default select example" id="pg_room_type" formControlName="pg_room_type">
+          <option value="single_sharing">single sharing</option>
+          <option value="duble_sharing">duble sharing</option>
+          <option value="triple_sharing">triple sharing</option>
+          <option value="four_sharing">four sharing</option>
+        </select>
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_room_type'].touched  &&  pgform.controls.pg_details['controls']['pg_room_type'].errors?.required" class="error_message">pg room type is mandatory</div>
+
+        <label class="mb-1 mt-3" for="deposite">deposite amount</label><span class="text-danger">*</span>
+        <input type="number" class="form-control" id="deposite" formControlName="pg_deposite">
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_deposite'].touched  &&  pgform.controls.pg_details['controls']['pg_deposite'].errors?.required" class="error_message">deposite amount is mandatory</div>
+        <div *ngIf="pgform.controls.pg_details['controls']['pg_deposite'].touched  &&  pgform.controls.pg_details['controls']['pg_deposite'].value &&  pgform.controls.pg_details['controls']['pg_deposite'].errors?.pattern" class="error_message">deposite amount should only contain no.</div>
+
+
+<!--        <ng-multiselect-dropdown-->
+<!--          [placeholder]="'custom placeholder'"-->
+<!--          [settings]="dropdownSettings"-->
+<!--          [data]="dropdownList"-->
+<!--          [(ngModel)]="selectedItems"-->
+<!--          (onSelect)="onItemSelect($event)"-->
+<!--          (onSelectAll)="onSelectAll($event)"-->
+<!--        >-->
+<!--        </ng-multiselect-dropdown>-->
+
+<!--        <div>-->
+<!--          <div (mouseleave)="showDropDown = false">-->
+<!--            <button class="drop-toggle btn flat" (click)="showDropDown=!showDropDown">-->
+<!--              <span *ngIf="checkedList.length<=0">Select</span>-->
+<!--              <span *ngIf="checkedList.length>0">{{checkedList.join(', ')}}</span>-->
+<!--              <i class="fa fa-angle-down"></i>-->
+<!--            </button>-->
+<!--            <div class="drop-show" *ngIf="showDropDown">-->
+<!--              <label *ngFor="let a of list">-->
+<!--                <input type="checkbox"/>-->
+<!--                <span>{{a.name}}</span>-->
+<!--              </label>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
