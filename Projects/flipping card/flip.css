@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    max-width: 60rem;
+    height: 40rem;
+    margin: 10rem auto;
+    position: relative;
+}
+
+.Circle {
+    width: 20rem;
+    height: 20rem;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.topCircle{
+    margin-left: 5rem;
+    background: rgb(236,232,233);
+    position: relative;
+    background: linear-gradient(270deg, rgba(236,232,233,1) 0%, rgba(230,19,154,1) 100%);
+    z-index: -3;
+}
+
+.bottomCircle{
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
+    background: rgb(236,232,233);
+    background: linear-gradient(90deg, rgba(236,232,233,1) 0%, rgba(230,19,154,1) 100%);}
+
+.card , .cardBack{
+    padding: 2rem;
+    font-weight: normal;
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    border: 2px solid green;
+    left: 15rem;
+    top: 10rem;
+    z-index: 1;
+    border-radius: 2rem;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    
+}
+
+.cardBack{
+    z-index: -1;
+    /* transform: rotateY(180deg); */
+    /* transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out; */
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.first h5{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.cardOwner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+h6, .date h6{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.cardNumber h5{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.cardOwner h5, .date h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+/* .cardBack:hover{
+    transform: rotateY(180deg);
+} */
